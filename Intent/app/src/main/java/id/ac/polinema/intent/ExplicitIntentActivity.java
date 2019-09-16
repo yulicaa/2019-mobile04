@@ -15,4 +15,7 @@ public class ExplicitIntentActivity extends AppCompatActivity {
         setContentView(R.layout.activity_explicit_intent);
     }
 
+
+
+
 }
