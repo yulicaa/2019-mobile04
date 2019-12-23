@@ -11,7 +11,7 @@
 
         <Button
             android:id="@+id/button_explicit"
-            android:text="@string/explicit_intent"
+            android:text="Explicit Intent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="handleExplicitIntent"

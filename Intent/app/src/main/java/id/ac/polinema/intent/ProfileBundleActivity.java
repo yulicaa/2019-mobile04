@@ -21,13 +21,13 @@ public class ProfileBundleActivity extends AppCompatActivity {
         ageText = findViewById(R.id.text_age);
 
         Bundle extras = getIntent().getExtras();
+        String username = extras.getString(BundleActivity.USERNAME_KEY);
+        String name = extras.getString(BundleActivity.NAME_KEY);
+//        int age = extras.getInt(BundleActivity.AGE_KEY);
+        String age = extras.get(BundleActivity.AGE_KEY).toString();
+
         if (extras != null) {
             // TODO: display value here
-
-            String username = extras.getString("username");
-            String name = extras.getString("name");
-            String age = String.valueOf(extras.getInt("age"));
-
             usernameText.setText(username);
             nameText.setText(name);
             ageText.setText(age);
